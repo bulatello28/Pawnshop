@@ -1,5 +1,4 @@
-﻿using Pawnshop.Pages;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,20 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Pawnshop
+namespace Pawnshop.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для CreateContract.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CreateContract : Page
     {
-        public MainWindow()
+        public CreateContract()
         {
             InitializeComponent();
-
-            ProductsPage.NavigationService.Navigate(new Products());
-            ContractsPage.NavigationService.Navigate(new Contracts());
-            ClientsPage.NavigationService.Navigate(new ClientsPage());
         }
     }
 }

@@ -9,7 +9,7 @@
       Title="Products">
 
     <Grid Background="WhiteSmoke">
-        <ListView x:Name="ProductsListBox" Initialized="ProductsListBox_Initialized" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="41,78,227,78">
+        <ListView x:Name="ProductsListBox" Initialized="ProductsListBox_Initialized" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="26,29,79,120">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Name" Width="150" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
@@ -17,7 +17,7 @@
                     <GridViewColumn Header="In pledge" Width="150" >
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <CheckBox IsChecked="{Binding In_pledge}" IsEnabled="False"/>
+                                <CheckBox IsChecked="{Binding In_plegde}" IsEnabled="False"/>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>

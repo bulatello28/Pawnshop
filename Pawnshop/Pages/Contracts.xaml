@@ -1,0 +1,30 @@
+﻿<Page x:Class="Pawnshop.Pages.Contracts"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Pawnshop.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="800"
+      ShowsNavigationUI="False"
+      KeepAlive="False"
+      Title="Contracts">
+
+    <Grid Background="WhiteSmoke">
+
+        <Frame x:Name="createContract" Margin="26,29,0,0" Width="695" Height="283" NavigationUIVisibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <ListView x:Name="ContractsListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Initialized="ListView_Initialized" Margin="26,29,0,0" Width="695" Height="283" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Client" Width="150" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
+                    <GridViewColumn Header="Product" Width="150" DisplayMemberBinding="{Binding Product}"></GridViewColumn>
+                    <GridViewColumn Header="Return date" Width="150" DisplayMemberBinding="{Binding Date_return}"></GridViewColumn>
+                    <GridViewColumn Header="Commision (%)" Width="150" DisplayMemberBinding="{Binding Commision}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Button x:Name="CreateContractBtn" Content="Create" Click="CreateContractBtn_Click" HorizontalAlignment="Left" Margin="26,342,0,0" VerticalAlignment="Top" Height="40" Width="101"/>
+        <Button x:Name="CancelContractBtn" Visibility="Hidden" Content="Cancel" Click="CancelContractBtn_Click" HorizontalAlignment="Left" Margin="26,342,0,0" VerticalAlignment="Top" Height="40" Width="101"/>
+    </Grid>
+</Page>

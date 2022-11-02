@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pawnshop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Lombard" Height="450" Width="800" ResizeMode="CanMinimize">
     <Grid>
         <TabControl>
             <TabItem Header="Main">
@@ -14,8 +14,11 @@
             <TabItem x:Name="tbProducts" Header="Products">
                 <Frame x:Name="ProductsPage"/>
             </TabItem>
-            <TabItem Header="Contracts">
-                <Grid Background="#FFE5E5E5"/>
+            <TabItem x:Name="tbContracts" Header="Contracts" >
+                <Frame x:Name="ContractsPage" NavigationUIVisibility="Hidden"/>
+            </TabItem>
+            <TabItem x:Name="tbClients" Header="Clients" >
+                <Frame x:Name="ClientsPage" NavigationUIVisibility="Hidden"/>
             </TabItem>
         </TabControl>
         

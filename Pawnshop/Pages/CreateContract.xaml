@@ -1,0 +1,24 @@
+﻿<Page x:Class="Pawnshop.Pages.CreateContract"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Pawnshop.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="280" d:DesignWidth="695"
+      ShowsNavigationUI="False"
+      KeepAlive="False"
+      Title="CreateContract">
+
+    <Grid Background="Gainsboro" >
+
+        <Label Content="Client: " HorizontalAlignment="Left" Margin="1,24,0,0" VerticalAlignment="Top" FontSize="16" Height="36" Width="79"/>
+        <ComboBox HorizontalAlignment="Left" Margin="116,31,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Product: " HorizontalAlignment="Left" Margin="1,81,0,0" VerticalAlignment="Top" FontSize="16" Height="36" Width="79"/>
+        <ComboBox HorizontalAlignment="Left" Margin="116,88,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Return date:" HorizontalAlignment="Left" Margin="1,134,0,0" VerticalAlignment="Top" FontSize="16" Height="36" Width="110"/>
+        <DatePicker HorizontalAlignment="Left" Margin="116,140,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="SaveContract" FontSize="16" Content="Save" HorizontalAlignment="Left" Margin="575,226,0,0" VerticalAlignment="Top" Height="36" Width="94"/>
+
+    </Grid>
+</Page>
